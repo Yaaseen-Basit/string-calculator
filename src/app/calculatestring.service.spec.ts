@@ -19,5 +19,8 @@ describe('CalculatestringService', () => {
   it('should return the sum of two numbers', () => {
     expect(service.add("1,5")).toBe(6);
   });
+  it('should handle new lines between numbers', () => {
+    expect(service.add("1\n2,3")).toBe(6);
+  });
   
 });
