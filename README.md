@@ -1,27 +1,36 @@
 # DemoCalculator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+CalculatestringService is an Angular service that processes a string input to compute the sum of numbers. It supports default delimiters, custom delimiters, and handles errors for negative numbers.
+Features
+Empty String Handling: Returns 0 for empty input.
+Single Number Handling: Returns the number itself.
+Sum Calculation: Computes the sum of numbers separated by commas or newlines.
+Custom Delimiters: Supports user-defined delimiters.
+Negative Number Validation: Throws an error if negative numbers are present.
+Installation
+Add to Angular Project:
+Ensure Angular CLI is installed and navigate to your project directory.
+Install Dependencies:
+Run npm install to install necessary dependencies.
+Add Service:
+Integrate the CalculatestringService into your Angular project as specified in your service documentation.
 
-## Development server
+Usage
+Inject the Service:
+Inject CalculatestringService into your Angular component.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Call the Service Method:
+Use the service method to process the string input and compute the sum.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Test Instructions
+Run Unit Tests:
+Use Angular CLI to run unit tests:
+ng test
+Test Cases:
+Empty String: Verify that an empty string returns 0.
+Single Number: Check that a single number returns that number itself.
+Two Numbers: Confirm that the service correctly sums two numbers separated by a comma.
+New Lines Handling: Ensure the service handles newlines between numbers correctly.
+Custom Delimiters: Test the service with user-defined delimiters.
+Negative Numbers: Validate that the service throws an error for negative numbers. The screenshot of the test cases can be seen here https://drive.google.com/file/d/1XETIZic-pKS8W85O6l6DyOG7CkflO_VV/view?usp=drive_link
